@@ -133,7 +133,7 @@ export function SolutionsSection() {
             Don't see exactly what you need? We build custom solutions for unique requirements.
           </p>
           <a 
-            href="https://t.me/sandourss" 
+            href="#cta" 
             className="inline-flex items-center text-primary hover:underline hover:translate-x-1 transition-transform"
           >
             Tell us about your project

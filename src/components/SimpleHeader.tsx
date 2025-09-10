@@ -11,9 +11,8 @@ export function SimpleHeader() {
           </div>
           <div className="text-sm text-muted-foreground">
             Have a project in mind? <a 
-              href="https://t.me/sandourss" 
+              href="#cta" 
               className="text-primary hover:underline"
-              target="_blank" rel="noopener noreferrer"
             >
               Let's talk
             </a>

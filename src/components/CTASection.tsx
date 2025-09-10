@@ -14,7 +14,7 @@ const benefits = [
 export function CTASection() {
 
   return (
-    <section className="py-16 px-4 bg-primary text-primary-foreground">
+    <section id="cta" className="py-16 px-4 bg-primary text-primary-foreground">
       <div className="container mx-auto max-w-4xl text-center">
         <motion.h2 
           className="text-3xl lg:text-4xl mb-4"
@@ -42,15 +42,7 @@ export function CTASection() {
             </CardHeader>
             <CardContent>
               <div className="text-center space-y-6">
-                <motion.div 
-                  className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto"
-                  initial={{ scale: 0.8, opacity: 0.8 }}
-                  whileInView={{ scale: 1, opacity: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.4 }}
-                >
-                  <MessageCircle className="h-8 w-8 text-white" />
-                </motion.div>
+                
                 
                 <Button 
                   size="lg" 
@@ -64,9 +56,17 @@ export function CTASection() {
                   </a>
                 </Button>
                 
-                <p className="text-sm text-muted-foreground">
-                  @sandourss
-                </p>
+                <Button 
+                  size="lg" 
+                  className="w-full group hover:scale-105 transition-transform bg-green-500 hover:bg-green-600" 
+                  asChild
+                >
+                  <a href="https://wa.me/380672618947" target="_blank" rel="noopener noreferrer">
+                    <MessageCircle className="mr-2 h-4 w-4" />
+                    Message on Whatsapp
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </a>
+                </Button>
               </div>
               
               <ul className="mt-6 space-y-2 text-sm text-muted-foreground animate-settle-delay-2">
